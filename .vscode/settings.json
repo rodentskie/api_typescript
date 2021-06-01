@@ -5,7 +5,6 @@
     },
     "[typescript]": {
         "editor.formatOnSave": true,
-        "editor.formatOnPaste": true
     },
     "[markdown]": {
         "editor.formatOnSave": true,
