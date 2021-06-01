@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "npx rimraf build/",
     "build": "npx rimraf build/ && prettier --write src/**/* && tsc",
+    "start": "node build/app",
     "dev": "nodemon src/app.ts",
     "utest": "jest src/tests/unit-test --detectOpenHandles --forceExit",
     "itest": "jest src/tests/integration-test --detectOpenHandles --forceExit"
