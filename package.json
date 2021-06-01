@@ -5,7 +5,7 @@
   "main": "src/app.ts",
   "scripts": {
     "clean": "npx rimraf build/",
-    "build": "npx rimraf build/ && tsc",
+    "build": "npx rimraf build/ && prettier --write src/**/* && tsc",
     "dev": "nodemon src/app.ts",
     "migrate": ""
   },
