@@ -1,4 +1,4 @@
-# CRUD API using TypeScript
+# CRUD API Clean Architecture using TypeScript
 
 ## Note: Please make the .env file before using. Follow the .env.txt file.
 
