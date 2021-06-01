@@ -15,7 +15,7 @@ const route = (router: any, makeExpressCallback: Function, validateAuth: Functio
     // PATCH
 
     // update employee
-    // router.patch('/:id', validateAuth, makeExpressCallback(employeesUpdates));
+    router.patch('/:id', validateAuth, makeExpressCallback(userController.usersUpdates));
 
     // #####
     // DELETE
