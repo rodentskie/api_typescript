@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/app.ts",
   "scripts": {
-    "build": "rm -rf build/ && prettier --write src/ && tsc",
+    "clean": "npx rimraf build/",
+    "build": "npx rimraf build/ && tsc",
     "dev": "nodemon src/app.ts",
     "migrate": ""
   },
