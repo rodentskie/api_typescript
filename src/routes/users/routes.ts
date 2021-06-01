@@ -20,7 +20,7 @@ const route = (router: any, makeExpressCallback: Function, validateAuth: Functio
     // #####
     // DELETE
 
-    // router.delete('/:id', validateAuth, makeExpressCallback(employeesDeletes));
+    router.delete('/:id', validateAuth, makeExpressCallback(userController.userDeletes));
 
     return router;
 };

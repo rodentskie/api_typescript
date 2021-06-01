@@ -5,8 +5,24 @@ const query = (conn: any, models: any) => {
         selectAll,
         selectOne,
         checkNameExistUpdate,
-        patchUser
+        patchUser,
+        removeUser
     });
+
+    async function removeUser(id: string) {
+        try {
+            // use sequelize on inserting
+            const User = models.User;
+            const res = await User.destroy({
+                where: {
+                    id
+                }
+            });
+            return res;
+        } catch (e) {
+            console.log('Error: ', e);
+        }
+    }
 
     async function patchUser(data: any) {
         try {
